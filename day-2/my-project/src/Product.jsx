@@ -1,15 +1,22 @@
+import Card from './components/Card';
+
 export default function Product() {
   return (
     <section className="flex flex-col w-fit mx-auto p-8">
       <div className="flex flex-row justify-between items-center py-4">
         <p className="text-xl">Wishlist (4)</p>
-        <button className="border w-fit border-neutral-900 py-2 px-4 rounded-md">
-          Move All To Bag
-        </button>
+        <button className="border w-fit border-neutral-900 py-2 px-4 rounded-md">Move All To Bag</button>
       </div>
 
       <div className="flex flex-col lg:flex-row gap-4">
-        <div className="flex flex-col gap-2.5">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        {/* <div className="flex flex-col gap-2.5">
           <div className="flex flex-col">
             <figure className="bg-neutral-200 flex justify-center items-center w-[270px] h-[250px] rounded-t-lg">
               <img src="./assets/tas-gucci.png" alt="Tas Gucci" />
@@ -71,7 +78,7 @@ export default function Product() {
             <p className="font-semibold">Quilted Satin Jacket</p>
             <p className="text-rose-600">$750</p>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
